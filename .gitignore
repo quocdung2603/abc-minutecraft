@@ -1,0 +1,10 @@
+.venv/
+.api_key_cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.DS_Store
+Thumbs.db
+test_output_*.docx
