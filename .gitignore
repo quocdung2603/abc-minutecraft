@@ -1,10 +1,33 @@
-.venv/
-.api_key_cache
+# Byte-compiled / optimized Python files
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
+*.so
+
+# Cython / coverage
 .pytest_cache/
+.coverage
+htmlcov/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project-specific (do not commit)
+src/__pycache__/
+src/**/__pycache__/
+.api_key_cache
+*.log
+
+# OS
 .DS_Store
 Thumbs.db
-test_output_*.docx
