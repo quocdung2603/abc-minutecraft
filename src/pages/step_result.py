@@ -134,7 +134,7 @@ def render() -> None:
                 )
             with col_md:
                 md_text = markdown_export.build_markdown_report(result, meeting_title)
-                st.code(md_text, language="markdown", key="result_md_code")
+                st.code(md_text, language="markdown")
         else:
             st.info("Không phát hiện nhiệm vụ được giao cụ thể trong cuộc họp.")
 
@@ -199,5 +199,5 @@ def render() -> None:
 
     # Clipboard copy via st.code
     md_full = markdown_export.build_markdown_report(result, meeting_title)
-    st.code(md_full, language="markdown", key="result_clipboard_code")
+    st.code(md_full, language="markdown")
     st.caption("↑ Sao chép nội dung Markdown ở trên để dán vào nơi khác.")
